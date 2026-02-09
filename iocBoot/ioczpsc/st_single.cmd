@@ -22,7 +22,11 @@ cd "${TOP}"
 
 ## Register all support components
 dbLoadDatabase "dbd/zpsc.dbd"
+dbLoadDatabase("dbd/seq.dbd")
+
 zpsc_registerRecordDeviceDriver pdbbase
+
+
 
 ## Load record instances for PSC1
 dbLoadRecords("db/lstats.db", "P=$(IOCNAME), NO=1")
@@ -67,50 +71,15 @@ setPSCSendBlockSize("PSC1", 1100, 512)
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
 
+
+
 ## Start any sequence programs
-#seq reset_digout P=$(IOCNAME) NO=1 CHAN=1 &
+seq ch_fsm,"M0=lab{1},M1=Chan1"
+seq ch_fsm,"M0=lab{1},M1=Chan2"
+seq ch_fsm,"M0=lab{1},M1=Chan3"
+seq ch_fsm,"M0=lab{1},M1=Chan4"
+
+
 
 epicsThreadSleep(1.0)
 
-
-
-dbpf lab{1}Chan1:DigOut_ON1-SP 0
-dbpf lab{1}Chan2:DigOut_ON1-SP 0
-dbpf lab{1}Chan3:DigOut_ON1-SP 0
-dbpf lab{1}Chan4:DigOut_ON1-SP 0
-
-dbpf lab{1}Chan1:DigOut_ON2-SP 1
-dbpf lab{1}Chan2:DigOut_ON2-SP 1
-dbpf lab{1}Chan3:DigOut_ON2-SP 1
-dbpf lab{1}Chan4:DigOut_ON2-SP 1
-
-dbpf lab{1}Chan1:DigOut_Reset-SP 0
-dbpf lab{1}Chan2:DigOut_Reset-SP 0
-dbpf lab{1}Chan3:DigOut_Reset-SP 0
-dbpf lab{1}Chan4:DigOut_Reset-SP 0
-
-dbpf lab{1}Chan1:DigOut_Spare-SP 0
-dbpf lab{1}Chan2:DigOut_Spare-SP 0
-dbpf lab{1}Chan3:DigOut_Spare-SP 0
-dbpf lab{1}Chan4:DigOut_Spare-SP 0
-
-
-dbpf lab{1}Chan1:DigOut_Park-SP 0
-dbpf lab{1}Chan2:DigOut_Park-SP 0
-dbpf lab{1}Chan3:DigOut_Park-SP 0
-dbpf lab{1}Chan4:DigOut_Park-SP 0
-
-dbpf lab{1}Chan1:DAC_SetPt-SP 0
-dbpf lab{1}Chan2:DAC_SetPt-SP 0
-dbpf lab{1}Chan3:DAC_SetPt-SP 0
-dbpf lab{1}Chan4:DAC_SetPt-SP 0
-
-#dbpf lab{1}Chan1:DACSetPt-Offset-SP 0.0
-#dbpf lab{1}Chan1:DACSetPt-Gain-SP 1.0
-
-dbpf lab{1}Chan1:DAC_OpMode-SP 0
-dbpf lab{1}Chan2:DAC_OpMode-SP 0
-dbpf lab{1}Chan3:DAC_OpMode-SP 0
-dbpf lab{1}Chan4:DAC_OpMode-SP 0
-
-dbpf lab{1}Chan2:AveMode-SP 0

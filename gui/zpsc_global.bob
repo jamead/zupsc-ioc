@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-07 09:10:36 by mead-->
+<!--Saved on 2026-02-09 09:39:31 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>825</width>
@@ -325,105 +325,6 @@
       <width>123</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Update_143</name>
-      <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
-      <x>127</x>
-      <y>71</y>
-      <width>107</width>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_83</name>
-      <text>Ch3 Polarity Bit</text>
-      <x>526</x>
-      <y>47</y>
-      <width>120</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Update_144</name>
-      <pv_name>$(PriSys){$(PSC)}Chan3:Polarity-Bit</pv_name>
-      <x>658</x>
-      <y>47</y>
-      <width>107</width>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_85</name>
-      <text>NumChan Bit</text>
-      <x>526</x>
-      <y>67</y>
-      <width>120</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Update_145</name>
-      <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
-      <x>658</x>
-      <y>67</y>
-      <width>107</width>
-      <font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>0</precision>
-      <horizontal_alignment>1</horizontal_alignment>
       <actions>
       </actions>
       <border_color>
@@ -2844,7 +2745,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_89</name>
-      <text>Git Hash</text>
+      <text>FW Git Hash</text>
       <x>3</x>
       <y>5</y>
       <width>92</width>
@@ -2862,7 +2763,7 @@ $(pv_value)</tooltip>
       <pv_name>$(PriSys){$(PSC)}GitHash-I</pv_name>
       <x>105</x>
       <y>6</y>
-      <width>90</width>
+      <width>121</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -3094,7 +2995,7 @@ $(pv_value)</tooltip>
       <name>Text Update_175</name>
       <pv_name>$(PriSys){$(PSC)}Rtos-Nthreads-I</pv_name>
       <x>97</x>
-      <y>15</y>
+      <y>37</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3116,7 +3017,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_101</name>
       <text>Num Threads</text>
-      <y>15</y>
+      <y>37</y>
       <width>92</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -3131,7 +3032,7 @@ $(pv_value)</tooltip>
       <name>Text Update_156</name>
       <pv_name>$(PriSys){$(PSC)}Sys-MemAvail-I</pv_name>
       <x>97</x>
-      <y>37</y>
+      <y>59</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3153,7 +3054,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_93</name>
       <text>Mem Avail</text>
-      <y>37</y>
+      <y>59</y>
       <width>92</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -3168,7 +3069,7 @@ $(pv_value)</tooltip>
       <name>Text Update_157</name>
       <pv_name>$(PriSys){$(PSC)}Sys-MemUsed-I</pv_name>
       <x>97</x>
-      <y>57</y>
+      <y>79</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3190,7 +3091,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_94</name>
       <text>Mem Used</text>
-      <y>57</y>
+      <y>79</y>
       <width>92</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -3205,7 +3106,7 @@ $(pv_value)</tooltip>
       <name>Text Update_158</name>
       <pv_name>$(PriSys){$(PSC)}Lwip-DropCnt-I</pv_name>
       <x>266</x>
-      <y>55</y>
+      <y>77</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3228,7 +3129,7 @@ $(pv_value)</tooltip>
       <name>Label_95</name>
       <text>DropCnt</text>
       <x>193</x>
-      <y>55</y>
+      <y>77</y>
       <width>61</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -3243,7 +3144,7 @@ $(pv_value)</tooltip>
       <name>Text Update_159</name>
       <pv_name>$(PriSys){$(PSC)}Lwip-XmitCnt-I</pv_name>
       <x>266</x>
-      <y>15</y>
+      <y>37</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3266,7 +3167,7 @@ $(pv_value)</tooltip>
       <name>Label_96</name>
       <text>XmitCnt</text>
       <x>193</x>
-      <y>15</y>
+      <y>37</y>
       <width>61</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -3281,7 +3182,7 @@ $(pv_value)</tooltip>
       <name>Text Update_160</name>
       <pv_name>$(PriSys){$(PSC)}Lwip-RecvCnt-I</pv_name>
       <x>266</x>
-      <y>35</y>
+      <y>57</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3304,10 +3205,49 @@ $(pv_value)</tooltip>
       <name>Label_97</name>
       <text>RecvCnt</text>
       <x>193</x>
-      <y>35</y>
+      <y>57</y>
       <width>61</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_172</name>
+      <text>IP Addr</text>
+      <x>-1</x>
+      <y>6</y>
+      <width>92</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_173</name>
+      <pv_name>$(PriSys){$(PSC)}Sys-IPAddrStr-I</pv_name>
+      <x>97</x>
+      <y>7</y>
+      <width>110</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>0</precision>
+      <horizontal_alignment>1</horizontal_alignment>
       <actions>
       </actions>
       <border_color>

@@ -128,3 +128,14 @@ record(ai, "$(P){$(NO)}Sys-VccAux-I") {
 }
 
 
+
+record(stringin, "$(P){$(NO)}Sys-IPAddrStr-I") {
+    field(DESC, "IP Address String")
+    field(DTYP, "PSC Block")
+    field(INP , "@PSC$(NO) 103")
+    field(SCAN,"I/O Intr")
+}
+
+
+
+
