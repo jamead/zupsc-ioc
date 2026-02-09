@@ -7,6 +7,8 @@
 /lib/
 /templates/
 /python/data/
+/db/
+/dbd/
 # Local configuration files
 #/configure/*.local
 
