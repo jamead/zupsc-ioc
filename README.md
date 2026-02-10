@@ -1,2 +1,2 @@
-# zpsc_ioc
-Zynq Power Supply Controller IOC
+# zupsc-ioc
+Zynq UltraScale+ Power Supply Controller IOC
