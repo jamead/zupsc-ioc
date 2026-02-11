@@ -7,14 +7,14 @@
 
 epicsEnvSet("IOCNAME", "lab")
 
-epicsEnvSet("EPICS_CAS_INTF_ADDR_LIST", "10.0.142.51")
+#epicsEnvSet("EPICS_CAS_INTF_ADDR_LIST", "10.0.142.51")
 epicsEnvSet("EPICS_CAS_AUTO_ADDR_LIST", "NO")
 
 
 
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "10.0.142.115"); 
+epicsEnvSet("PSC1_IP", "10.0.142.116"); 
 
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 
@@ -30,6 +30,7 @@ zpsc_registerRecordDeviceDriver pdbbase
 
 ## Load record instances for PSC1
 dbLoadRecords("db/lstats.db", "P=$(IOCNAME), NO=1")
+dbLoadRecords("db/brdstats.db", "P=$(IOCNAME), NO=1")
 dbLoadRecords("db/status10hz.db", "P=$(IOCNAME), NO=1, OFFSET=100, BUFLEN=10000")
 dbLoadRecords("db/control_glob.db", "P=$(IOCNAME), NO=1")
 dbLoadRecords("db/control_chan.db", "P=$(IOCNAME), NO=1, CHAN=1")
@@ -62,7 +63,7 @@ dbLoadRecords("db/wfmstats.db", "P=$(IOCNAME), PSC=1")
 
 
 
-var(PSCDebug, 2)	#5 full debug
+var(PSCDebug, 5)	#5 full debug
 
 #psc1 Create the PSC
 createPSC("PSC1", $(PSC1_IP), 3000, 0)
