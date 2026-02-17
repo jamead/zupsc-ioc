@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-11 11:26:59 by mead-->
+<!--Saved on 2026-02-16 16:21:24 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>860</width>
@@ -132,7 +132,7 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_234</name>
-      <pv_name>$(P){CPC:$(N)}Sys-BrdTemp2-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeSense2-I</pv_name>
       <x>154</x>
       <y>101</y>
       <width>75</width>
@@ -153,7 +153,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_235</name>
-      <pv_name>$(P){CPC:$(N)}Sys-BrdTemp3-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeSense3-I</pv_name>
       <x>154</x>
       <y>122</y>
       <width>75</width>
@@ -192,42 +192,6 @@ $(pv_value)</tooltip>
       <text>Board 4</text>
       <x>47</x>
       <y>122</y>
-      <width>96</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_8</name>
-      <pv_name>$(P){CPC:$(N)}Sys-RegTemp3-I</pv_name>
-      <x>155</x>
-      <y>211</y>
-      <width>75</width>
-      <background_color>
-        <color name="Background" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>2</precision>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_101</name>
-      <text>Regulator 4</text>
-      <x>47</x>
-      <y>211</y>
       <width>96</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -285,7 +249,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_236</name>
-      <pv_name>$(P){CPC:$(N)}Sys-RegTemp0-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeRegSense1-I</pv_name>
       <x>155</x>
       <y>148</y>
       <width>75</width>
@@ -306,7 +270,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_237</name>
-      <pv_name>$(P){CPC:$(N)}Sys-RegTemp1-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeRegSense2-I</pv_name>
       <x>155</x>
       <y>169</y>
       <width>75</width>
@@ -327,7 +291,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_238</name>
-      <pv_name>$(P){CPC:$(N)}Sys-RegTemp2-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeRegSense3-I</pv_name>
       <x>155</x>
       <y>190</y>
       <width>75</width>
@@ -363,7 +327,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_229</name>
-      <pv_name>$(P){CPC:$(N)}Sys-fpgaplTemp-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:FpgaDie-I</pv_name>
       <x>155</x>
       <y>12</y>
       <width>75</width>
@@ -399,7 +363,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_231</name>
-      <pv_name>$(P){CPC:$(N)}Sys-fpgapsTemp-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Sys-fpgapsTemp-I</pv_name>
       <x>155</x>
       <y>33</y>
       <width>75</width>
@@ -435,7 +399,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_232</name>
-      <pv_name>$(P){CPC:$(N)}Sys-BrdTemp0-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeSense0-I</pv_name>
       <x>155</x>
       <y>59</y>
       <width>75</width>
@@ -456,7 +420,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_233</name>
-      <pv_name>$(P){CPC:$(N)}Sys-BrdTemp1-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeSense1-I</pv_name>
       <x>155</x>
       <y>80</y>
       <width>75</width>

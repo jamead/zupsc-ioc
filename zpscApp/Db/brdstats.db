@@ -1,3 +1,213 @@
+record(ai, "$(P){$(NO)}Temp:DfeSense0-I") {
+    field(DESC, "DFE Temp0 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 4")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+
+record(ai, "$(P){$(NO)}Temp:DfeSense1-I") {
+    field(DESC, "DFE Temp1 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 8")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:DfeSense2-I") {
+    field(DESC, "DFE Temp2 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 12")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+
+record(ai, "$(P){$(NO)}Temp:DfeSense3-I") {
+    field(DESC, "DFE Temp3 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 16")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:AfeSense0-I") {
+    field(DESC, "AFE Temp0 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 20")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"45")
+    field(LOLO,"-0.5")
+    field(HIGH,"37")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:AfeSense1-I") {
+    field(DESC, "AFE Temp1 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 24")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:FpgaDie-I") {
+    field(DESC, "FPGA Die Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 28")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"10")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:DfeRegSense1-I") {
+    field(DESC, "DFE Regulator Temp1 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 112")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:DfeRegSense2-I") {
+    field(DESC, "DFE Regulator Temp2 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 116")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:DfeRegSense3-I") {
+    field(DESC, "DFE Regulator Temp3 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 120")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){$(NO)}Temp:PwrMgmt-I") {
+    field(DESC, "LTC2977 Pwr Mgmt Chip Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 32 280")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+
+
+
+
+
+
+
+
+
+
 record(ai, "$(P){$(NO)}Pwr:VinV-I") {
     field(DESC, "Input Voltage")
     field(DTYP, "PSC Reg F32")
