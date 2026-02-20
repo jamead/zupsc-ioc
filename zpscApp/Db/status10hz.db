@@ -1014,13 +1014,104 @@ record(longin, "$(P){$(NO)}Chan1:DACSetPtRaw-I") {
     field(SCAN,"I/O Intr")
 }
 
-record(ai, "$(P){$(NO)}Chan1:FOFB:DACSetPt-I") {
-    field(DESC, "FOFB DAC Set Point")
+#record(ai, "$(P){$(NO)}Chan1:FOFB:DACSetPt-I") {
+#    field(DESC, "FOFB DAC Set Point")
+#    field(DTYP, "PSC Reg F32")
+#    field(INP , "@PSC$(NO) 31 356")
+#    field(SCAN,"I/O Intr")
+#    field(EGU,  "")
+#}
+
+### Digital PID
+
+record(ai, "$(P){$(NO)}Chan1:Kp-I") {
+    field(DESC, "Proportional Gain")
     field(DTYP, "PSC Reg F32")
     field(INP , "@PSC$(NO) 31 356")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
+
+record(ai, "$(P){$(NO)}Chan1:Ki-I") {
+    field(DESC, "Integral Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 360")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:Kd-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 364")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:SetptIn-I") {
+    field(DESC, "Set Point Input")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 368")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:FdBk-I") {
+    field(DESC, "Feedback Input (DCCT)")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 372")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:Error-I") {
+    field(DESC, "DPID Error Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 376")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:Pterm-I") {
+    field(DESC, "DPID P Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 380")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:Iterm-I") {
+    field(DESC, "DPID I Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 384")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:Dterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 388")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:Sumterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 392")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan1:SetPtOut-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 396")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
 
 
 
@@ -1754,13 +1845,106 @@ record(longin, "$(P){$(NO)}Chan2:DACSetPtRaw-I") {
     field(SCAN,"I/O Intr")
 }
 
-record(ai, "$(P){$(NO)}Chan2:FOFB:DACSetPt-I") {
-    field(DESC, "FOFB DAC Set Point")
+#record(ai, "$(P){$(NO)}Chan2:FOFB:DACSetPt-I") {
+#    field(DESC, "FOFB DAC Set Point")
+#    field(DTYP, "PSC Reg F32")
+#    field(INP , "@PSC$(NO) 31 656")
+#    field(SCAN,"I/O Intr")
+#    field(EGU,  "")
+#}
+
+### Digital PID
+
+record(ai, "$(P){$(NO)}Chan2:Kp-I") {
+    field(DESC, "Proportional Gain")
     field(DTYP, "PSC Reg F32")
     field(INP , "@PSC$(NO) 31 656")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
+
+record(ai, "$(P){$(NO)}Chan2:Ki-I") {
+    field(DESC, "Integral Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 660")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:Kd-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 664")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:SetptIn-I") {
+    field(DESC, "Set Point Input")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 668")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:FdBk-I") {
+    field(DESC, "Feedback Input (DCCT)")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 672")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:Error-I") {
+    field(DESC, "DPID Error Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 676")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:Pterm-I") {
+    field(DESC, "DPID P Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 680")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:Iterm-I") {
+    field(DESC, "DPID I Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 684")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:Dterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 688")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:Sumterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 692")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan2:SetPtOut-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 696")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+
+
 
 
 
@@ -2490,13 +2674,105 @@ record(longin, "$(P){$(NO)}Chan3:DACSetPtRaw-I") {
     field(SCAN,"I/O Intr")
 }
 
-record(ai, "$(P){$(NO)}Chan3:FOFB:DACSetPt-I") {
-    field(DESC, "FOFB DAC Set Point")
+#record(ai, "$(P){$(NO)}Chan3:FOFB:DACSetPt-I") {
+#    field(DESC, "FOFB DAC Set Point")
+#    field(DTYP, "PSC Reg F32")
+#    field(INP , "@PSC$(NO) 31 956")
+#    field(SCAN,"I/O Intr")
+#    field(EGU,  "")
+#}
+
+### Digital PID
+
+record(ai, "$(P){$(NO)}Chan3:Kp-I") {
+    field(DESC, "Proportional Gain")
     field(DTYP, "PSC Reg F32")
     field(INP , "@PSC$(NO) 31 956")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
+
+record(ai, "$(P){$(NO)}Chan3:Ki-I") {
+    field(DESC, "Integral Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 960")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:Kd-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 964")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:SetptIn-I") {
+    field(DESC, "Set Point Input")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 968")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:FdBk-I") {
+    field(DESC, "Feedback Input (DCCT)")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 972")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:Error-I") {
+    field(DESC, "DPID Error Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 976")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:Pterm-I") {
+    field(DESC, "DPID P Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 980")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:Iterm-I") {
+    field(DESC, "DPID I Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 984")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:Dterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 988")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:Sumterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 992")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan3:SetPtOut-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 996")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+
 
 
 
@@ -3230,12 +3506,105 @@ record(longin, "$(P){$(NO)}Chan4:DACSetPtRaw-I") {
     field(EGU,  "")
 }
 
-record(ai, "$(P){$(NO)}Chan4:FOFB:DACSetPt-I") {
-    field(DESC, "FOFB DAC Set Point")
+#record(ai, "$(P){$(NO)}Chan4:FOFB:DACSetPt-I") {
+#    field(DESC, "FOFB DAC Set Point")
+#    field(DTYP, "PSC Reg F32")
+#    field(INP , "@PSC$(NO) 31 1256")
+#    field(SCAN,"I/O Intr")
+#    field(EGU,  "")
+#}
+
+
+### Digital PID
+
+record(ai, "$(P){$(NO)}Chan4:Kp-I") {
+    field(DESC, "Proportional Gain")
     field(DTYP, "PSC Reg F32")
     field(INP , "@PSC$(NO) 31 1256")
     field(SCAN,"I/O Intr")
     field(EGU,  "")
 }
+
+record(ai, "$(P){$(NO)}Chan4:Ki-I") {
+    field(DESC, "Integral Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1260")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:Kd-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1264")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:SetptIn-I") {
+    field(DESC, "Set Point Input")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1268")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:FdBk-I") {
+    field(DESC, "Feedback Input (DCCT)")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1272")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:Error-I") {
+    field(DESC, "DPID Error Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1276")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:Pterm-I") {
+    field(DESC, "DPID P Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1280")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:Iterm-I") {
+    field(DESC, "DPID I Term")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1284")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:Dterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1288")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:Sumterm-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 31 1292")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+record(ai, "$(P){$(NO)}Chan4:SetPtOut-I") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 1296")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "")
+}
+
+
 
 

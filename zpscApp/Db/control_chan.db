@@ -719,6 +719,70 @@ record(waveform, "$(P){$(NO)}Chan$(CHAN):RampTable-Wfm") {
     field(FLNK, "$(P){$(NO)}send")
 }
 
+
+### Digital Loops
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):Kp-SP") {
+    field(DESC, "Proportional Gain")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 600")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):Ki-SP") {
+    field(DESC, "Integral Gain")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 604")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):Kd-SP") {
+    field(DESC, "Derivative Gain")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 608")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(bo, "$(P){$(NO)}Chan$(CHAN):DPIDEnb-SP") {
+    field(DESC, "Enable Digital PID Loop")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) $(CHAN) 612")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(bo, "$(P){$(NO)}Chan$(CHAN):DPIDResetI-SP") {
+    field(DESC, "Digital PID Loop Reset Integrator")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) $(CHAN) 616")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(bo, "$(P){$(NO)}Chan$(CHAN):DPIDPark-SP") {
+    field(DESC, "Digital PID Park")
+    field(DTYP, "PSC Single U32")
+    field(OUT , "@PSC$(NO) $(CHAN) 620")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):DPIDILimit-SP") {
+    field(DESC, "Integrator Limit")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 624")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+
+
+
+
+
+
+
 #-----------------------------------------------
 #------------FSM Readbacks----------------------
 #-----------------------------------------------
