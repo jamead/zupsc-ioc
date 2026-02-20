@@ -15,11 +15,6 @@ def get_sa_data(psc_prefix):
   sa_pv.append(psc_prefix+"Chan2:DCCT1-I")
   sa_pv.append(psc_prefix+"Chan2:DCCT2-I") 
   sa_pv.append(psc_prefix+"Chan2:DAC-I")
-  sa_pv.append(psc_prefix+"Chan2:Volt-I")
-  sa_pv.append(psc_prefix+"Chan2:Gnd-I")
-  sa_pv.append(psc_prefix+"Chan2:Spare-I")
-  sa_pv.append(psc_prefix+"Chan2:Reg-I")
-  sa_pv.append(psc_prefix+"Chan2:Error-I") 
 
   #collect SA data points
   waveform = np.asarray(caget(sa_pv), dtype=np.float32)
@@ -45,10 +40,12 @@ def main():
       for i in range(1,numpts):         
          ts = caget(psc+"TS-S-I")
          data = get_sa_data(psc)
-         print("%8d:\t%10d\t %2.3f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t  %2.6f \t %2.6f" 
-            % (i,ts,data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]))
-         print("%10d\t %2.3f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f" 
-            % (ts,data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]),file=outfile)
+         print("%8d:\t%10d\t %2.3f\t %2.6f\t %2.6f\t %2.6f" 
+          % (i,ts,data[0],data[1],data[2],data[3]))         
+         #print("%8d:\t%10d\t %2.3f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t  %2.6f \t %2.6f" 
+         #   % (i,ts,data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]))
+         #print("%10d\t %2.3f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f\t %2.6f" 
+         #   % (ts,data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8]),file=outfile)
          while (ts == caget(psc+"TS-S-I")):
             #print("Waiting")
             time.sleep(0.1) 
