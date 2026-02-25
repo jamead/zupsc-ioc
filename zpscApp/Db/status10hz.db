@@ -587,7 +587,8 @@ record(ai, "$(P){$(NO)}Chan1:Reg-I") {
 
 record(aSub, "$(P){$(NO)}Chan1:Reg-aSub") {
     field(DESC, "Rolling Buffer of 100 floats")
-    field(INPA, "$(P){$(NO)}Chan1:Reg-I NPP NMS")  
+    #field(INPA, "$(P){$(NO)}Chan1:Reg-I NPP NMS")
+    field(INPA, "$(P){$(NO)}Chan1:Sumterm-I NPP NMS")  
     field(FTA, "FLOAT")
     field(INPB, "$(P){$(NO)}Chan1:TenHzBufLen-SP NPP")   # desired length
     field(FTB, "LONG")       

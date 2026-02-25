@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-11 11:23:31 by mead-->
+<!--Saved on 2026-02-24 10:12:39 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>825</width>
@@ -356,6 +356,35 @@
       </font>
       <tooltip>$(actions)</tooltip>
       <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_18</name>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_Spare-SP</pv_name>
+      <x>531</x>
+      <y>66</y>
+      <width>50</width>
+      <height>21</height>
+      <off_label></off_label>
+      <off_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label></on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_85</name>
+      <text>Spare</text>
+      <x>535</x>
+      <y>46</y>
+      <width>50</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
