@@ -14,7 +14,7 @@ epicsEnvSet("EPICS_CAS_AUTO_ADDR_LIST", "NO")
 
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "10.0.142.116"); 
+epicsEnvSet("PSC1_IP", "10.0.142.117"); 
 
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 
@@ -75,10 +75,10 @@ iocInit
 
 
 ## Start any sequence programs
-seq ch_fsm,"M0=lab{1},M1=Chan1"
-seq ch_fsm,"M0=lab{1},M1=Chan2"
-seq ch_fsm,"M0=lab{1},M1=Chan3"
-seq ch_fsm,"M0=lab{1},M1=Chan4"
+#seq ch_fsm,"M0=lab{1},M1=Chan1"
+#seq ch_fsm,"M0=lab{1},M1=Chan2"
+#seq ch_fsm,"M0=lab{1},M1=Chan3"
+#seq ch_fsm,"M0=lab{1},M1=Chan4"
 
 
 

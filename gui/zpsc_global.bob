@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-24 10:12:39 by mead-->
+<!--Saved on 2026-03-19 08:41:47 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>825</width>
@@ -356,35 +356,6 @@
       </font>
       <tooltip>$(actions)</tooltip>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Boolean Button_18</name>
-      <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_Spare-SP</pv_name>
-      <x>531</x>
-      <y>66</y>
-      <width>50</width>
-      <height>21</height>
-      <off_label></off_label>
-      <off_color>
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </off_color>
-      <on_label></on_label>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_85</name>
-      <text>Spare</text>
-      <x>535</x>
-      <y>46</y>
-      <width>50</width>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
@@ -2784,7 +2755,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_87</name>
-      <text>10KHz Count</text>
+      <text>DMA Count</text>
       <x>208</x>
       <y>58</y>
       <width>90</width>
@@ -2838,7 +2809,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_153</name>
-      <pv_name>$(PriSys){$(PSC)}Sys-Temp-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:FpgaDie-I</pv_name>
       <x>105</x>
       <y>38</y>
       <width>90</width>
@@ -2876,7 +2847,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_154</name>
-      <pv_name>$(PriSys){$(PSC)}Sys-VccInt-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Temp:DfeSense0-I</pv_name>
       <x>105</x>
       <y>58</y>
       <width>90</width>
@@ -2899,7 +2870,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_91</name>
-      <text>VCC Int (V)</text>
+      <text>Brd Temp (C)</text>
       <x>3</x>
       <y>57</y>
       <width>92</width>
@@ -2914,7 +2885,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_155</name>
-      <pv_name>$(PriSys){$(PSC)}Sys-VccAux-I</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Pwr:VinV-I</pv_name>
       <x>105</x>
       <y>78</y>
       <width>90</width>
@@ -2937,7 +2908,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_92</name>
-      <text>Vcc Aux (V)</text>
+      <text>Brd Vin (V)</text>
       <x>3</x>
       <y>77</y>
       <width>95</width>
@@ -2954,7 +2925,7 @@ $(pv_value)</tooltip>
       <name>Text Update_174</name>
       <pv_name>$(PriSys){$(PSC)}Rtos-Uptime-I</pv_name>
       <x>302</x>
-      <y>37</y>
+      <y>6</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -2977,7 +2948,7 @@ $(pv_value)</tooltip>
       <name>Label_100</name>
       <text>Uptime</text>
       <x>206</x>
-      <y>37</y>
+      <y>6</y>
       <width>92</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -3015,10 +2986,49 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_165</name>
-      <text>10KHz Freq</text>
+      <text>Acq Freq</text>
       <x>208</x>
       <y>78</y>
       <width>90</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Update_177</name>
+      <pv_name>$(PriSys){$(PSC)}CurrBufAddr-I</pv_name>
+      <x>302</x>
+      <y>38</y>
+      <width>90</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <format>4</format>
+      <precision>0</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_102</name>
+      <text>DMA Addr</text>
+      <x>206</x>
+      <y>38</y>
+      <width>92</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>

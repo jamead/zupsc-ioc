@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-20 08:03:21 by mead-->
+<!--Saved on 2026-06-29 11:23:20 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>1700</width>
@@ -2880,9 +2880,9 @@ $(actions)</tooltip>
   </widget>
   <widget type="group" version="3.0.0">
     <name>Current Control</name>
-    <x>11</x>
+    <x>12</x>
     <y>140</y>
-    <width>790</width>
+    <width>792</width>
     <height>78</height>
     <style>1</style>
     <foreground_color>
@@ -2903,7 +2903,7 @@ $(actions)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Input_37</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_SetPt-SP</pv_name>
-      <x>33</x>
+      <x>5</x>
       <y>25</y>
       <width>90</width>
       <font>
@@ -2928,7 +2928,6 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_254</name>
       <text>SetPoint (A)</text>
-      <x>22</x>
       <y>2</y>
       <width>101</width>
       <horizontal_alignment>1</horizontal_alignment>
@@ -2944,7 +2943,7 @@ $(actions)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_249</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-I</pv_name>
-      <x>391</x>
+      <x>316</x>
       <y>7</y>
       <width>102</width>
       <font>
@@ -2968,7 +2967,7 @@ $(actions)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_250</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPtRaw-I</pv_name>
-      <x>392</x>
+      <x>319</x>
       <y>30</y>
       <width>102</width>
       <font>
@@ -2992,9 +2991,9 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_264</name>
       <text>DAC Cmd (A)</text>
-      <x>239</x>
+      <x>178</x>
       <y>7</y>
-      <width>130</width>
+      <width>122</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -3007,7 +3006,7 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_265</name>
       <text>DAC Cmd (adu)</text>
-      <x>267</x>
+      <x>194</x>
       <y>27</y>
       <width>130</width>
       <horizontal_alignment>1</horizontal_alignment>
@@ -3022,7 +3021,7 @@ $(actions)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_247</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Gain-I</pv_name>
-      <x>622</x>
+      <x>515</x>
       <y>7</y>
       <width>90</width>
       <font>
@@ -3046,8 +3045,8 @@ $(actions)</tooltip>
     <widget type="textentry" version="3.0.0">
       <name>Text Update_248</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DACSetPt-Offset-I</pv_name>
-      <x>623</x>
-      <y>28</y>
+      <x>516</x>
+      <y>30</y>
       <width>90</width>
       <font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -3070,7 +3069,7 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_262</name>
       <text>DAC Gain</text>
-      <x>529</x>
+      <x>431</x>
       <y>7</y>
       <width>72</width>
       <horizontal_alignment>1</horizontal_alignment>
@@ -3085,8 +3084,8 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_263</name>
       <text>DAC Offset</text>
-      <x>513</x>
-      <y>25</y>
+      <x>424</x>
+      <y>28</y>
       <width>92</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -3100,7 +3099,7 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_130</name>
       <text>PS Mode</text>
-      <x>175</x>
+      <x>116</x>
       <y>2</y>
       <width>73</width>
       <vertical_alignment>1</vertical_alignment>
@@ -3114,10 +3113,73 @@ $(actions)</tooltip>
     <widget type="combo" version="2.0.0">
       <name>Combo Box</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC_OpMode-SP</pv_name>
-      <x>164</x>
-      <y>25</y>
+      <x>105</x>
+      <y>24</y>
       <width>85</width>
       <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_266</name>
+      <text>DDS Freq</text>
+      <x>616</x>
+      <y>30</y>
+      <width>72</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_281</name>
+      <text>DDS Enb</text>
+      <x>615</x>
+      <y>7</y>
+      <width>72</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="checkbox" version="2.0.0">
+      <name>Check Box_6</name>
+      <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-DDS-Enb-SP</pv_name>
+      <label></label>
+      <x>695</x>
+      <y>6</y>
+      <width>18</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_39</name>
+      <pv_name>$(PriSys){$(PSC)}$(CHAN):DAC-DDS-Freq-SP</pv_name>
+      <x>688</x>
+      <y>30</y>
+      <width>64</width>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
@@ -3425,7 +3487,7 @@ $(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_277</name>
-    <text>zPSC Channel : Bipolar</text>
+    <text>zuPSC Channel : Bipolar</text>
     <x>174</x>
     <y>4</y>
     <width>273</width>
@@ -3888,5 +3950,20 @@ $(actions)</tooltip>
     <width>1</width>
     <height>1</height>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_279</name>
+    <text>Hz</text>
+    <x>765</x>
+    <y>189</y>
+    <width>43</width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
   </widget>
 </display>
