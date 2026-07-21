@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-23 11:30:32 by mead-->
+<!--Saved on 2026-07-20 08:22:27 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>1120</width>
@@ -472,7 +472,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
             <y>465</y>
             <width>500</width>
             <height>200</height>
-            <title>PS Vout</title>
+            <title>Set Point In (From Smooth Ramp)</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -558,7 +558,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
             <y>465</y>
             <width>500</width>
             <height>200</height>
-            <title>Regulator</title>
+            <title>Regulator - Sum</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -644,7 +644,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
             <y>665</y>
             <width>500</width>
             <height>200</height>
-            <title>Spare</title>
+            <title>Iterm</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -829,7 +829,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
             <y>665</y>
             <width>500</width>
             <height>200</height>
-            <title>iGND</title>
+            <title>Pterm</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -893,7 +893,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
               <trace>
                 <name></name>
                 <x_pv></x_pv>
-                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:Hdr-Wfm</y_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:Gnd-Wfm</y_pv>
                 <err_pv></err_pv>
                 <axis>0</axis>
                 <trace_type>1</trace_type>
