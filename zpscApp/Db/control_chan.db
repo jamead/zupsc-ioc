@@ -777,9 +777,9 @@ record(ao, "$(P){$(NO)}Chan$(CHAN):DPIDILimit-SP") {
 }
 
 
-record(longout, "$(P){$(NO)}Chan$(CHAN):DAC-DDS-Freq-SP") {
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC-DDS-Freq-SP") {
     field(DESC, "DAC DDS Frequency")
-    field(DTYP, "PSC Single I32")
+    field(DTYP, "PSC Single F32")
     field(OUT , "@PSC$(NO) $(CHAN) 650")
     info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
@@ -790,6 +790,23 @@ record(bo, "$(P){$(NO)}Chan$(CHAN):DAC-DDS-Enb-SP") {
     field(DESC, "DAC DDS Enable")
     field(DTYP, "PSC Single U32")
     field(OUT , "@PSC$(NO) $(CHAN) 654")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC-DDS-Amplitude-SP") {
+    field(DESC, "DAC DDS Amplitude")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 658")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
+}
+
+
+record(ao, "$(P){$(NO)}Chan$(CHAN):DAC-DDS-Offset-SP") {
+    field(DESC, "DAC DDS Offset")
+    field(DTYP, "PSC Single F32")
+    field(OUT , "@PSC$(NO) $(CHAN) 662")
+    info(autosaveFields, "VAL")
     field(FLNK, "$(P){$(NO)}GoRegSingleWrite$(CHAN)")
 }
 
